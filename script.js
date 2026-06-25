@@ -266,7 +266,7 @@ function renderDestinations() {
 
         <h3>${dest.name}</h3>
 
-        <p>${dest.description}</p>
+        <p>${dest.description[currentLang]}</p>
 
         <div class="dest-meta">
 
@@ -284,7 +284,7 @@ function renderDestinations() {
 
             <span>
               <strong>${t.ticketLabel}:</strong>
-              ${dest.ticket}
+              ${dest.ticket[currentLang]}
             </span>
           </div>
 
@@ -300,7 +300,7 @@ function renderDestinations() {
 
             <span>
               <strong>${t.hoursLabel}:</strong>
-              ${dest.hours}
+              ${dest.hours[currentLang]}
             </span>
           </div>
 
