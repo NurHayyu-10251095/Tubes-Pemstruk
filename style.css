@@ -1,6 +1,6 @@
-/* ============================================================
+/* 
    KalimTrip — style.css
-   ============================================================ */
+ */
 :root {
     --hutan-dark: #16261c;
     --hutan:      #2f4d3a;
@@ -18,7 +18,7 @@
     --fakta-bg:   var(--hutan-dark);
 }
 
-/* ======================== RESET ======================== */
+// RESET
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -30,7 +30,7 @@ body {
 a { text-decoration: none; color: inherit; }
 button { cursor: pointer; }
 
-/* ======================== NAVBAR ======================== */
+//NAVIGATION BAR
 .navbar {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -103,7 +103,7 @@ button { cursor: pointer; }
 .lang-btn:hover:not(.active) { color: rgba(255,255,255,0.85); }
 .navbar.solid .lang-btn:hover:not(.active) { color: var(--teks); }
 
-/* ======================== HERO ======================== */
+// HERO BANNER
 .hero{
     position:relative;
     min-height:100vh;
@@ -149,7 +149,7 @@ button { cursor: pointer; }
     z-index:2;
 }
 
-/* CONTENT */
+// CONTENT
 .hero-content{
     position:absolute;
     z-index:9999;
@@ -164,7 +164,6 @@ button { cursor: pointer; }
     color:white;
 }
 
-/* Supaya lebih terbaca */
 .hero h1{
     color:white;
     font-size:72px;
@@ -219,7 +218,7 @@ button { cursor: pointer; }
     box-shadow: 0 8px 24px rgba(217,164,65,0.35);
 }
 
-/* ======================== CONTAINER ======================== */
+// CONTAINER
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -239,7 +238,7 @@ button { cursor: pointer; }
     line-height: 1.6;
 }
 
-/* ======================== FILTER BARS ======================== */
+// FILTER BARS
 .filter-wrap {
     display: flex;
     flex-direction: column;
@@ -278,7 +277,7 @@ button { cursor: pointer; }
     border-color: var(--hutan-dark);
 }
 
-/* ======================== DESTINATION GRID ======================== */
+//  GRID DESTINASI
 .dest-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -387,7 +386,7 @@ button { cursor: pointer; }
     font-size: 14px;
 }
 
-/* ======================== MOTIF DIVIDER ======================== */
+// MOTIIF DIVIDER
 .motif-line {
     height: 6px;
     margin: 60px 0 0;
@@ -401,7 +400,7 @@ button { cursor: pointer; }
     opacity: 0.9;
 }
 
-/* ======================== FOOTER ======================== */
+// FOOTER
 .footer {
     background: #132118;
     color: var(--krem);
@@ -498,7 +497,7 @@ button { cursor: pointer; }
     margin: 0 auto;
 }
 
-/* ======================== SCROLL REVEAL ======================== */
+// SCROLL REVEAL
 [data-reveal] {
     opacity: 0;
     transform: translateY(28px);
@@ -515,7 +514,7 @@ button { cursor: pointer; }
     [data-reveal] { opacity: 1; transform: none; transition: none; }
 }
 
-/* ======================== RESPONSIVE ======================== */
+// RESPONSIVE
 @media (max-width: 960px) {
     .footer-container { grid-template-columns: 1fr 1fr; }
     .footer-brand { grid-column: 1 / -1; }
